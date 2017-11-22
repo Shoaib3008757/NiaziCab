@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "570992828947",
+    "firebase_url": "https://niazi-cab.firebaseio.com",
+    "project_id": "niazi-cab",
+    "storage_bucket": "niazi-cab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570992828947:android:4e1b36fc9110622a",
+        "android_client_info": {
+          "package_name": "rdm.niazicab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570992828947-uh9e8gq2vceplo7peippam2dhn35t2i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rdm.niazicab",
+            "certificate_hash": "5f57386e761baeafb52c64868974b79af2d45a21"
+          }
+        },
+        {
+          "client_id": "570992828947-3k4p80jsm6ougq2006o2q45ol37f6lkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxTCYreF6eyVxeVTV-ZwgBft4aPHCMF4A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570992828947-3k4p80jsm6ougq2006o2q45ol37f6lkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

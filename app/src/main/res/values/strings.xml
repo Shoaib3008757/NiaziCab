@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">Niazi Cab</string>
+
+    <string name="map_key">AIzaSyAy6hqhAz1N-JpVEB7vQwQj1e69UjHQcSU</string>
+    <string name="place_key">AIzaSyCW64V0Ugrz0KC2wBpwnZeAgL79Q4nHyKg</string>
+
+    <array name="car_brands">
+        <item>Select Brand</item>
+        <item>Suzuki</item>
+        <item>Honda</item>
+        <item>Toyota</item>
+
+        <item>Daewoo</item>
+        <item>Daihatsu</item>
+        <item>Fiat</item>
+        <item>BMW</item>
+        <item>Hyundai</item>
+        <item>Jaguar</item>
+        <item>Jeep</item>
+        <item>Kia</item>
+        <item>Land Rover</item>
+        <item>Mercedes Benz</item>
+        <item>Chvrolet</item>
+        <item>Audi</item>
+
+    </array>
+
+    <array name="car_types">
+        <item>Select Car</item>
+    </array>
+
+    <array name="toyota">
+        <item>Select Care</item>
+        <item>Camry</item>
+        <item>Corolla</item>
+        <item>C-HR</item>
+        <item>Fortuner</item>
+        <item>iQ</item>
+        <item>Land Cruiser</item>
+        <item>Mark II</item>
+        <item>Passo</item>
+        <item>Prado</item>
+        <item>Vitz</item>
+
+    </array>
+
+    <array name="chvrolet">
+        <item>Select Care</item>
+        <item>Optra</item>
+        <item>Exclusive</item>
+        <item>Joy</item>
+
+    </array>
+
+
+    <array name="honda">
+        <item>Select Care</item>
+        <item>Accord</item>
+        <item>BR-V</item>
+        <item>Civic</item>
+        <item>City</item>
+        <item>Civi Hybrid</item>
+        <item>CR-V</item>
+        <item>CR-Z Sports</item>
+        <item>Fit Aria</item>
+        <item>Hr-V</item>
+        <item>Hybrid</item>
+        <item>Vezal</item>
+
+    </array>
+
+
+    <array name="suzuki">
+        <item>Select Care</item>
+        <item>Alto</item>
+        <item>APV</item>
+        <item>Baleno</item>
+        <item>Cultus</item>
+        <item>Liana</item>
+        <item>Mehran</item>
+        <item>Ravi</item>
+        <item>Swift</item>
+        <item>Wagon R</item>
+        <item>Vitara</item>
+
+
+    </array>
+
+    <array name="bmw">
+        <item>Select Care</item>
+        <item>2 Series</item>
+        <item>3 Series</item>
+        <item>5 Series</item>
+        <item>7 Serires</item>
+        <item>i8</item>
+        <item>X1</item>
+        <item>X4</item>
+        <item>X5 Series</item>
+        <item>Z4</item>
+
+    </array>
+
+
+    <array name="mercedes_benz">
+        <item>Select Care</item>
+        <item>Brabus</item>
+        <item>C Class</item>
+        <item>CLA Class</item>
+        <item>CLK Class</item>
+        <item>CLS Class</item>
+        <item>E Class</item>
+        <item>GLS Class</item>
+        <item>S Class</item>
+        <item>SLK Class</item>
+
+    </array>
+
+
+    <array name="audi">
+        <item>Select Care</item>
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+        <item>A6</item>
+        <item>A7</item>
+        <item>A8</item>
+        <item>Q3</item>
+        <item>Q7</item>
+        <item>R8</item>
+
+    </array>
+
+
+    <array name="daewoo">
+        <item>Select Care</item>
+        <item>Racer</item>
+
+    </array>
+
+    <array name="daihatsu">
+        <item>Select Care</item>
+        <item>Cast</item>
+        <item>Charade</item>
+        <item>Course</item>
+        <item>Copen</item>
+        <item>Esse</item>
+        <item>Mira</item>
+        <item>Mira Custom</item>
+        <item>Move</item>
+        <item>Terios Kid</item>
+        <item>Terios</item>
+
+    </array>
+
+
+    <array name="jeep">
+        <item>Select Care</item>
+        <item>CJ 5</item>
+        <item>M151</item>
+        <item>Wragler</item>
+
+
+    </array>
+
+    <array name="kia">
+        <item>Select Care</item>
+        <item>Carnival</item>
+        <item>Rio</item>
+        <item>Pride</item>
+        <item>Spectra</item>
+        <item>Sportage</item>
+
+    </array>
+
+    <array name="jaguar">
+        <item>Select Care</item>
+        <item>XF</item>
+
+    </array>
+
+    <array name="fiat">
+        <item>Select Care</item>
+        <item>Punto</item>
+
+
+    </array>
+
+    <array name="hyundai">
+        <item>Select Care</item>
+        <item>Excel</item>
+        <item>Santro</item>
+        <item>Shezore</item>
+        <item>tucason</item>
+
+    </array>
+
+    <array name="land_rover">
+        <item>Select Care</item>
+        <item>Defender</item>
+        <item>Discovery 4</item>
+    </array>
+
+</resources>

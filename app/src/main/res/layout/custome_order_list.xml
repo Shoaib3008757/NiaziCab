@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPurple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_orderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlack"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorlightPurple">
+
+        <ImageView
+            android:id="@+id/im_pickup_location"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pickup_icon"
+            android:background="@color/colorPurple"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:text="Pick up"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:paddingLeft="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/im_pickup_location"
+            android:id="@+id/tv_pick"
+            android:textColor="@color/colorWhite"
+
+            android:textStyle="bold"
+            android:background="@color/colorPurple"/>
+
+
+        <TextView
+            android:id="@+id/tv_pickupaddress"
+            android:layout_toRightOf="@+id/tv_pick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="6dp"
+            android:text="aljdkljsd sdlkjflsdjf "
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorlightPurple"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/im_dropoff_location"
+            android:layout_width="14dp"
+            android:layout_height="40dp"
+            android:src="@drawable/dropoff_icon"
+            android:background="@color/colorPurple"/>
+
+        <TextView
+            android:id="@+id/dropoff"
+            android:layout_toRightOf="@+id/im_dropoff_location"
+            android:paddingTop="10dp"
+            android:text="Drop Off"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:paddingLeft="4dp"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_dropoffpaddress"
+            android:layout_toRightOf="@+id/dropoff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="6dp"
+            android:textColor="@color/colorWhite"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorlightPurple"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/im_date"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:src="@drawable/date_icon"
+            android:background="@color/colorPurple"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_toRightOf="@+id/im_date"
+            android:paddingTop="10dp"
+            android:text="Date"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="4dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_toRightOf="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="6dp"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorlightPurple"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/im_time"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPurple"
+            android:src="@drawable/time_icon"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_toRightOf="@+id/im_time"
+            android:paddingTop="10dp"
+            android:text="Time"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:paddingLeft="4dp"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_toRightOf="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="6dp"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pickuplocation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorlightPurple"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/im_cartype"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cartype_icon"
+            android:background="@color/colorPurple"/>
+
+        <TextView
+            android:id="@+id/cartype"
+            android:layout_toRightOf="@+id/im_cartype"
+            android:paddingTop="10dp"
+            android:text="Car Type"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+           android:paddingLeft="4dp"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_cartype"
+            android:layout_toRightOf="@+id/cartype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="6dp"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_distance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorlightPurple"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/im_distance"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:src="@drawable/distance_icon"
+                android:background="@color/colorPurple"/>
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_toRightOf="@+id/im_distance"
+                android:paddingTop="10dp"
+                android:text="Distance"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:paddingLeft="4dp"
+                android:background="@color/colorPurple"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_toRightOf="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="6dp"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fare"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorlightPurple"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/im_fare"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fare_icon"
+                android:background="@color/colorPurple"/>
+
+            <TextView
+                android:id="@+id/fare"
+                android:layout_toRightOf="@+id/im_fare"
+                android:paddingTop="10dp"
+                android:text="Fare"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:paddingLeft="4dp"
+                android:background="@color/colorPurple"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_fare"
+                android:layout_toRightOf="@+id/fare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="6dp"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
