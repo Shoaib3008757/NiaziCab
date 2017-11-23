@@ -131,6 +131,9 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.MyVi
             public void onClick(View view) {
 
                 Intent i = new Intent(activity, MapsActivity.class);
+                // Send data to NotificationView Class
+                //   intent.putExtra("title", strtitle);
+                i.putExtra("mid", "TEST");
                 activity.startActivity(i);
             }
         });

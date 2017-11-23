@@ -92,6 +92,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     Location myCurrentLocation;
+    Location myStaticCurrentLocation;
     Marker mCurrLocationMarker;
 
     private int timer = 3;
@@ -281,6 +282,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             longitude = mLastLocation.getLongitude();
 
             myCurrentLocation = mLastLocation;
+            myStaticCurrentLocation = mLastLocation;
 
             mapHelper.setLatitude(latitude);
             mapHelper.setLongitude(longitude);
@@ -676,11 +678,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onLocationChanged(Location location) {
 
-        Toast toast =  Toast.makeText(this, "Location Changed " + location.getLatitude()
+       /* Toast toast =  Toast.makeText(this, "Location Changed " + location.getLatitude()
                 + location.getLongitude(), Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
-
+*/
         myCurrentLocation = location;
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker.remove();
@@ -702,7 +704,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         //move map camera
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(21));
+
+
+        LatLng currentLatLng = new LatLng(latitude, longitude);
+
+        Log.e("TAG", "abc test CurrentLATLNG: " + latLng);
+        Log.e("TAG", " abc test Static LatLng: " + currentLatLng);
+
+        calculateShorDistance(mLatlngDropoff, latLng);
+
 
     }
 
@@ -771,7 +782,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         @Override
         protected void onPostExecute(List<List<HashMap<String, String>>> result) {
             ArrayList<LatLng> points;
-            lineOptions = null;
+
+                lineOptions = null;
+
 
             // Traversing through all the routes
             if (result.size()!=0){
@@ -805,8 +818,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             // Drawing polyline in the Google Map for the i-th route
             if(lineOptions != null) {
-                polyline =  mMap.addPolyline(lineOptions);
-
+                if (polyline!=null){
+                    polyline.remove();
+                    polyline =  mMap.addPolyline(lineOptions);
+                }else {
+                    polyline = mMap.addPolyline(lineOptions);
+                }
 
             }
             else {
