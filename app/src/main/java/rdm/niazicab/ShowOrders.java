@@ -20,6 +20,7 @@ public class ShowOrders extends AppCompatActivity {
 
     RecyclerView recylerview;
     OrderListAdapter mAdapter;
+    TextView tv_text_no_order;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class ShowOrders extends AppCompatActivity {
     public void init(){
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(ContextCompat.getColor(ShowOrders.this ,R.color.colorGreen)));
         recylerview = (RecyclerView) findViewById(R.id.recylerview);
+        tv_text_no_order = (TextView) findViewById(R.id.tv_text_no_order);
 
     }
 
@@ -44,6 +46,10 @@ public class ShowOrders extends AppCompatActivity {
         ArrayList<DbHelper> datalist = new ArrayList<>();
         datalist = db.getOrders();
 
+
+        if (datalist.isEmpty()){
+            tv_text_no_order.setVisibility(View.VISIBLE);
+        }
 
 
         mAdapter = new OrderListAdapter(ShowOrders.this, datalist);

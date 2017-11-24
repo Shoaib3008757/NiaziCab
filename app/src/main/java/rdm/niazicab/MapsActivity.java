@@ -315,7 +315,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         if(mGoogleApiClient.isConnected()){
 
-            LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
+           // LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
         }
 
 
@@ -683,7 +683,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
 */
-        myCurrentLocation = location;
+
+       //
+
+
+       /* myCurrentLocation = location;
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker.remove();
         }
@@ -712,7 +716,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Log.e("TAG", "abc test CurrentLATLNG: " + latLng);
         Log.e("TAG", " abc test Static LatLng: " + currentLatLng);
 
-        calculateShorDistance(mLatlngDropoff, latLng);
+        calculateShorDistance(mLatlngDropoff, latLng);*/
 
 
     }
@@ -819,7 +823,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             // Drawing polyline in the Google Map for the i-th route
             if(lineOptions != null) {
                 if (polyline!=null){
-                    polyline.remove();
+                   // polyline.remove();
                     polyline =  mMap.addPolyline(lineOptions);
                 }else {
                     polyline = mMap.addPolyline(lineOptions);

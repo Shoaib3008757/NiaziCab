@@ -14,7 +14,7 @@
         android:titleTextColor="@color/colorWhite"
         app:titleTextColor="@color/colorWhite"
         android:theme="@style/AppTheme"
-        app:title="Naizi Cab"
+        app:title="App Cab"
         android:background="@color/colorGreen">
 
         <LinearLayout

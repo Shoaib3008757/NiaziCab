@@ -93,7 +93,7 @@ public class  BaseActvitvityForDrawer extends AppCompatActivity {
 
                 if (menuItem.getItemId() == R.id.nav_item_home) {
                     //home activity
-                    Toast.makeText(getApplicationContext(), "Home Activity", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "DashBoard", Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -101,6 +101,19 @@ public class  BaseActvitvityForDrawer extends AppCompatActivity {
 
                     Intent i = new Intent(BaseActvitvityForDrawer.this, ShowOrders.class);
                     startActivity(i);
+
+                }
+                if (menuItem.getItemId() == R.id.nav_item_about){
+
+                    Intent i = new Intent(BaseActvitvityForDrawer.this, AboutUs.class);
+                    startActivity(i);
+
+                }
+                if (menuItem.getItemId() == R.id.nav_item_buyer){
+
+                    Intent i = new Intent(BaseActvitvityForDrawer.this, ContactUs.class);
+                    startActivity(i);
+
 
                 }
 

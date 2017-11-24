@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_show_orders"
+    android:id="@+id/activity_contact_us"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="rdm.niazicab.ShowOrders">
+    android:layout_height="match_parent"
+    tools:context="rdm.niazicab.ContactUs">
 
-
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recylerview"
+    <WebView
+        android:id="@+id/webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"></WebView>
 
-    <TextView
-        android:id="@+id/tv_text_no_order"
+    <ProgressBar
+        android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="No Order Exits"
-        android:textStyle="bold"
+        android:indeterminateDrawable="@drawable/progress_bar"
         android:visibility="gone"/>
-
 
 </RelativeLayout>

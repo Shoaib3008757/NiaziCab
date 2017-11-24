@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -170,6 +171,7 @@ public class MainActivity extends BaseActvitvityForDrawer {
         et_phone = (EditText) findViewById(R.id.et_phone);
         et_name.setFocusableInTouchMode(true);
         et_phone.setFocusableInTouchMode(true);
+        et_name.setSingleLine(true);
 
         rl_tv_submit = (RelativeLayout) findViewById(R.id.rl_tv_submit);
 
@@ -180,6 +182,8 @@ public class MainActivity extends BaseActvitvityForDrawer {
         notificiationIntent.putExtra("alarmId", 0);
 
         pendingIntentForNotification = PendingIntent.getBroadcast(MainActivity.this, 0, notificiationIntent, 0);
+
+
 
 
 
@@ -676,7 +680,7 @@ public class MainActivity extends BaseActvitvityForDrawer {
                     Toast.makeText(MainActivity.this, "Please Select Vahicle Brand", Toast.LENGTH_SHORT).show();
                 }
                 else if (sp_car_type.getSelectedItemPosition()==0){
-                    Toast.makeText(MainActivity.this, "Please Select Vahicle Taype", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please Select Vahicle Type", Toast.LENGTH_SHORT).show();
                 }
                 else if (isNetworkAvailable()==false){
                     Toast.makeText(MainActivity.this, "No Internet Connection found", Toast.LENGTH_SHORT).show();
@@ -722,12 +726,12 @@ public class MainActivity extends BaseActvitvityForDrawer {
                     userCarType = sp_car_brand.getSelectedItem().toString() + " " + sp_car_type.getSelectedItem().toString();
 
                     AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                    dialog.setTitle("The Estimated Fair");
-                    dialog.setMessage("The Total Distace is: " + distace + " Km" +
+                    dialog.setTitle("The Estimated Fare");
+                    dialog.setMessage("The Total Distance is: " + distace + " Km" +
                            // "\n" + "The Total Estimate Traveling Time: " + totalTime + "minuts" +
-                            "\n" + "The Total Estimate Fair is: " + "Rs." + (distace*20));
+                            "\n" + "The Total Estimated Fare is: " + "Rs." + (distace*20));
 
-                    dialog.setPositiveButton("Book Plan", new DialogInterface.OnClickListener() {
+                    dialog.setPositiveButton("Book Now", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -844,8 +848,8 @@ public class MainActivity extends BaseActvitvityForDrawer {
 
 
             AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
-            alert.setTitle("Order Submited Sucessfully");
-            alert.setMessage("Thank you " + userName + "! Your Order Hass been successfully sumited, Our Agent Will receive you from your provided location at the time and date you provide " + "\n" + "You also can view your traveling rout");
+            alert.setTitle("Order Submitted Sucessfully");
+            alert.setMessage("Thank you " + userName + "! Your Order Has been successfully sumitted, Our Agent Will receive you from your provided location at the time and date you provide " + "\n" + "You also can view your traveling route");
             alert.setNegativeButton("Ok", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
@@ -853,7 +857,7 @@ public class MainActivity extends BaseActvitvityForDrawer {
                 }
             });
 
-            alert.setPositiveButton("Show Rout", new DialogInterface.OnClickListener() {
+            alert.setPositiveButton("Show Map", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
 

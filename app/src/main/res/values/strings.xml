@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Niazi Cab</string>
+    <string name="app_name">App Cab</string>
 
     <string name="map_key">AIzaSyAy6hqhAz1N-JpVEB7vQwQj1e69UjHQcSU</string>
     <string name="place_key">AIzaSyCW64V0Ugrz0KC2wBpwnZeAgL79Q4nHyKg</string>
@@ -30,7 +30,7 @@
     </array>
 
     <array name="toyota">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Camry</item>
         <item>Corolla</item>
         <item>C-HR</item>
@@ -45,7 +45,7 @@
     </array>
 
     <array name="chvrolet">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Optra</item>
         <item>Exclusive</item>
         <item>Joy</item>
@@ -54,7 +54,7 @@
 
 
     <array name="honda">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Accord</item>
         <item>BR-V</item>
         <item>Civic</item>
@@ -71,7 +71,7 @@
 
 
     <array name="suzuki">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Alto</item>
         <item>APV</item>
         <item>Baleno</item>
@@ -87,7 +87,7 @@
     </array>
 
     <array name="bmw">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>2 Series</item>
         <item>3 Series</item>
         <item>5 Series</item>
@@ -102,7 +102,7 @@
 
 
     <array name="mercedes_benz">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Brabus</item>
         <item>C Class</item>
         <item>CLA Class</item>
@@ -117,7 +117,7 @@
 
 
     <array name="audi">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>A3</item>
         <item>A4</item>
         <item>A5</item>
@@ -132,13 +132,13 @@
 
 
     <array name="daewoo">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Racer</item>
 
     </array>
 
     <array name="daihatsu">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Cast</item>
         <item>Charade</item>
         <item>Course</item>
@@ -154,7 +154,7 @@
 
 
     <array name="jeep">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>CJ 5</item>
         <item>M151</item>
         <item>Wragler</item>
@@ -163,7 +163,7 @@
     </array>
 
     <array name="kia">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Carnival</item>
         <item>Rio</item>
         <item>Pride</item>
@@ -173,20 +173,20 @@
     </array>
 
     <array name="jaguar">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>XF</item>
 
     </array>
 
     <array name="fiat">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Punto</item>
 
 
     </array>
 
     <array name="hyundai">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Excel</item>
         <item>Santro</item>
         <item>Shezore</item>
@@ -195,7 +195,7 @@
     </array>
 
     <array name="land_rover">
-        <item>Select Care</item>
+        <item>Select Car</item>
         <item>Defender</item>
         <item>Discovery 4</item>
     </array>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="@color/colorPurple">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorlightPurple">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="Ranglerz Digital Marketing"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorWhite"
+
+                    android:text="Thank you for your interest. We’re full-fledged IT Solution Provider Company based in Newcastle Peterborough: England, Belgium, and in Lahore: Pakistan. We create professional websites, social networks, brands and high-performance web applications for clients of all shape and sizes (from large blue-chip corporations, job portals, property portals to international musicians, DJs, cosmetics, health sites etc.). Ranglerz endeavor to provide the most effective, innovative and practical solutions in developing each project into a success story. We are proud to provide high quality, reliable, dependable, flexible, and very user-friendly web sites for non-commercial and commercial organizations together with excellent customer support. We are the specialists in Website Design, e-Commerce, Graphic Designing, Pay Per Click i.e. Google Advertising, Social Media Marketing i.e. Facebook Marketing, Search Engine Optimization and Mobile Applications Development (Android, IOS).
+
+Formed in the winter of 2012 by lifelong brothers, from its humble beginnings as a little-big idea, Ranglerz Digital Marketing has grown through the years into the dynamic development team it is today.
+
+Our services are scalable, so we can address the needs of businesses of all sizes. Companies ranging from innovative startups to well established companies with eight-digit revenue make use of our technical expertise, with an emphasis in developing projects in Php, Cake Php, Html, html5, WordPress, Joomla, Microsoft .NET, Java, Oracle, Unity, Android, IOS etc.
+
+To see what Ranglerz Digital Marketing can do for you, visit our Portfolio page or Contact Us to obtain a quote today!"/>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
