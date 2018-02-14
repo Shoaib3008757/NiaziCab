@@ -799,12 +799,12 @@ public class MainActivity extends BaseActvitvityForDrawer {
             String data = "test";
             try {
 
-                Mail sender = new Mail("niazicaborders@gmail.com", "iamniazicaborder");
+                Mail sender = new Mail("emailhere", "passwordhere");
                 // sender.addAttachment(Environment.getExternalStorageDirectory()+Imagepath);
                 sender.sendMail("New Booking Order",
                         orderTosend,
-                        "niazicaborders@gmail.com",
-                        "niazicaborders@gmail.com");
+                        "senderhemailhere",
+                        "receiveremailhere");
 
 
             } catch (Exception e) {
